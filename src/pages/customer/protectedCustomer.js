@@ -37,11 +37,7 @@ const ProtectedCustomer = () => {
     protectedCustomer()
   }, [])
 
-  return loading ? (
-    <div>
-      <h1>Loading...</h1>
-    </div>
-  ) : (
+  return(
     <div className="customer-login">
       <div className="customer-links">
         <div className="customer-box">
