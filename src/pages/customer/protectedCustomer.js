@@ -29,6 +29,7 @@ const ProtectedCustomer = () => {
 
       setLoading(false)
     } catch (error) {
+      console.log(error)
       logout()
     }
   }
