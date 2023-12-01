@@ -50,81 +50,81 @@ export async function removeTravel(Id) {
 
 // employee
 export async function onLoginEmployee(LoginDataEmployee) {
-    return await axios.post('http://localhost:8000/api/login-employees', LoginDataEmployee)
+    return await axios.post('https://thesis-space-webapp-api.onrender.com/api/login-employees', LoginDataEmployee)
 }
 
 export async function fetchProtectedEmployee() {
-    return await axios.get('http://localhost:8000/api/protected-employees')
+    return await axios.get('https://thesis-space-webapp-api.onrender.com/api/protected-employees')
 }
 
 export async function fetchProjectsEmployee() {
-    return await axios.get('http://localhost:8000/api/projects-employee')
+    return await axios.get('https://thesis-space-webapp-api.onrender.com/api/projects-employee')
 }
 
 export async function editProgressEmployee(ProgressEmployee) {
-    return await axios.put('http://localhost:8000/api/progress-employee', ProgressEmployee);
+    return await axios.put('https://thesis-space-webapp-api.onrender.com/api/progress-employee', ProgressEmployee);
 }
   
 
 // management
 export async function onLoginManager(LoginDataManager) {
-    return await axios.post('http://localhost:8000/api/login-managers', LoginDataManager)
+    return await axios.post('https://thesis-space-webapp-api.onrender.com/api/login-managers', LoginDataManager)
 }
 
 export async function fetchProtectedManager() {
-    return await axios.get('http://localhost:8000/api/protected-managers')
+    return await axios.get('https://thesis-space-webapp-api.onrender.com/api/protected-managers')
 }
 
 export async function fetchEmployeestoManagement() {
-    return await axios.get('http://localhost:8000/api/get-employees')
+    return await axios.get('https://thesis-space-webapp-api.onrender.com/api/get-employees')
 }
 
 export async function promoteEmployee(PromoteEmployee) {
-    return await axios.put('http://localhost:8000/api/promote-employee', PromoteEmployee)
+    return await axios.put('https://thesis-space-webapp-api.onrender.com/api/promote-employee', PromoteEmployee)
 }
 
 export async function fireEmployee(employeeId) {
-    return await axios.delete(`http://localhost:8000/api/fire-employee/${employeeId}`)
+    return await axios.delete(`https://thesis-space-webapp-api.onrender.com/api/fire-employee/${employeeId}`)
 }
 
 export async function fetchTools() {
-    return await axios.get('http://localhost:8000/api/tools')
+    return await axios.get('https://thesis-space-webapp-api.onrender.com/api/tools')
 }
 
 export async function fetchEquipments() {
-    return await axios.get('http://localhost:8000/api/equipments')
+    return await axios.get('https://thesis-space-webapp-api.onrender.com/api/equipments')
 }
 
 export async function fetchVehicles() {
-    return await axios.get('http://localhost:8000/api/vehicles')
+    return await axios.get('https://thesis-space-webapp-api.onrender.com/api/vehicles')
 }
 
 export async function editAmortisation(EditAmortisation) {
-    return await axios.put('http://localhost:8000/api/edit-amortisation', EditAmortisation)
+    return await axios.put('https://thesis-space-webapp-api.onrender.com/api/edit-amortisation', EditAmortisation)
 }
 
 export async function deleteProperties(Id) {
-    return await axios.delete(`http://localhost:8000/api/delete-properties/${Id}`)
+    return await axios.delete(`https://thesis-space-webapp-api.onrender.com/api/delete-properties/${Id}`)
 }
 
 export async function fetchProjectstoManagement() {
-    return await axios.get('http://localhost:8000/api/get-projects')
+    return await axios.get('https://thesis-space-webapp-api.onrender.com/api/get-projects')
 }
 
 export async function createProjectstoEmployee(CreateEmployeeProjects) {
-    return await axios.post('http://localhost:8000/api/create-projects', CreateEmployeeProjects)
+    return await axios.post('https://thesis-space-webapp-api.onrender.com/api/create-projects', CreateEmployeeProjects)
 }
 
 export async function editProjects(EditProjects) {
-    return await axios.put('http://localhost:8000/api/edit-projects', EditProjects)
+    return await axios.put('https://thesis-space-webapp-api.onrender.com/api/edit-projects', EditProjects)
 }
 
 export async function deleteProjectsMan(projectId) {
-    return await axios.delete(`http://localhost:8000/api/delete-projects/${projectId}`)
+    return await axios.delete(`https://thesis-space-webapp-api.onrender.com/api/delete-projects/${projectId}`)
 }
 
 
 // all
 export async function onLogout() {
-    return await axios.get('http://localhost:8000/api/logout')
+    return await axios.get('https://thesis-space-webapp-api.onrender.com/api/logout')
 }
