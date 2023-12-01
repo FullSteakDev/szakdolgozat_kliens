@@ -22,16 +22,16 @@ const ProtectedCustomer = () => {
   }
 
   const protectedCustomer = async () => {
-    try {
+//    try {
       const { data } = await fetchProtectedCustomer()
 
       setProtectedCustomer(data.info)
-
+/* 
       setLoading(false)
     } catch (error) {
       console.log(error)
       logout()
-    }
+    } */
   }
 
   useEffect(() => {
