@@ -4,47 +4,47 @@ axios.defaults.withCredentials = true
 
 // customer
 export async function onRegistrationCustomer(registrationDataCustomer) {
-    return await axios.post('http://localhost:8000/api/register-customers', registrationDataCustomer)
+    return await axios.post('https://thesis-space-webapp-api.onrender.com/api/register-customers', registrationDataCustomer)
 }
 
 export async function onLoginCustomer(LoginDataCustomer) {
-    return await axios.post('http://localhost:8000/api/login-customers', LoginDataCustomer)
+    return await axios.post('https://thesis-space-webapp-api.onrender.com/api/login-customers', LoginDataCustomer)
 }
 
 export async function fetchProtectedCustomer() {
-    return await axios.get('http://localhost:8000/api/protected-customers')
+    return await axios.get('https://thesis-space-webapp-api.onrender.com/api/protected-customers')
 }
 
 export async function fetchProducts() {
-    return await axios.get('http://localhost:8000/api/products')
+    return await axios.get('https://thesis-space-webapp-api.onrender.com/api/products')
 }
 
 export async function fetchProductsCustomer() {
-    return await axios.get('http://localhost:8000/api/products-customer')
+    return await axios.get('https://thesis-space-webapp-api.onrender.com/api/products-customer')
 }
 
 export async function reserveProductsCustomer(name, description, price, material) {
-    return await axios.post(`http://localhost:8000/api/reserve-products/${name}/${description}/${price}/${material}`)
+    return await axios.post(`https://thesis-space-webapp-api.onrender.com/api/reserve-products/${name}/${description}/${price}/${material}`)
 }
 
 export async function removeProduct(Id) {
-    return await axios.delete(`http://localhost:8000/api/remove-product/${Id}`)
+    return await axios.delete(`https://thesis-space-webapp-api.onrender.com/api/remove-product/${Id}`)
 }
 
 export async function fetchTravels() {
-    return await axios.get('http://localhost:8000/api/travels')
+    return await axios.get('https://thesis-space-webapp-api.onrender.com/api/travels')
 }
 
 export async function fetchTravelsCustomer() {
-    return await axios.get('http://localhost:8000/api/travels-customer')
+    return await axios.get('https://thesis-space-webapp-api.onrender.com/api/travels-customer')
 }
 
 export async function reserveTravelsCustomer(name, departure, destination, date, price, length) {
-    return await axios.post(`http://localhost:8000/api/reserve-travels/${name}/${departure}/${destination}/${date}/${price}/${length}`)
+    return await axios.post(`https://thesis-space-webapp-api.onrender.com/api/reserve-travels/${name}/${departure}/${destination}/${date}/${price}/${length}`)
 }
 
 export async function removeTravel(Id) {
-    return await axios.delete(`http://localhost:8000/api/remove-travel/${Id}`)
+    return await axios.delete(`https://thesis-space-webapp-api.onrender.com/api/remove-travel/${Id}`)
 }
 
 
