@@ -19,7 +19,7 @@ const LoginCustomer = () => {
 
     const dispatch = useDispatch()
     const onSubmit = async (e) => {
-      //e.preventDefault()
+      e.preventDefault()
 
       try{
         await onLoginCustomer(values)
