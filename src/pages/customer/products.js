@@ -8,7 +8,7 @@ const GetProducts = () => {
   const [products, setProducts] = useState(null)
 
   const product = async () => {
-    try {
+//    try {
       const { data } = await fetchProducts();
 
       const sortedProducts = data.products.sort((a, b) => {
@@ -19,9 +19,9 @@ const GetProducts = () => {
 
       setProducts(sortedProducts);
       setLoading(false);
-    } catch (error) {
+/*     } catch (error) {
       console.log(error);
-    }
+    } */
   }
 
   useEffect(() => {
