@@ -18,8 +18,8 @@ const GetProducts = () => {
       });
 
       setProducts(sortedProducts);
-      setLoading(false);
-/*     } catch (error) {
+/*       setLoading(false);
+    } catch (error) {
       console.log(error);
     } */
   }
@@ -28,11 +28,12 @@ const GetProducts = () => {
     product()
   }, []);
 
-  return loading ? (
+/*   return loading ? (
     <div>
       <h1>Termékek hamarosan érkeznek</h1>
     </div>
-  ) : (
+  ) : ( */
+  return (
     <div className='customer'>
       {products.map((product, index) => (
         <div key={index} className="customer-box">
