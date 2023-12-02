@@ -21,7 +21,8 @@ const ProtectedCustomer = () => {
     }
   }
 
-  const protectedCustomer = async () => {
+  const protectedCustomer = async (e) => {
+    e.preventDefault()
 //    try {
       const { data } = await fetchProtectedCustomer()
       
