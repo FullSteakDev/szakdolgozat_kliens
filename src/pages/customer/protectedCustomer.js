@@ -24,7 +24,7 @@ const ProtectedCustomer = () => {
   const protectedCustomer = async () => {
 //    try {
       const { data } = await fetchProtectedCustomer()
-
+      
       setProtectedCustomer(data.info)
 /* 
       setLoading(false)
