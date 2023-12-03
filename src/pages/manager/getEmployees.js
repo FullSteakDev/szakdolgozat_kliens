@@ -25,7 +25,7 @@ const GetEmployees = () => {
     try {
       const { data } = await fetchEmployeestoManagement()
 
-      setProtectedGetEmployees(data.employees)
+ //     setProtectedGetEmployees(data.employees)
 
       setLoading(false)
     } catch (error) {
