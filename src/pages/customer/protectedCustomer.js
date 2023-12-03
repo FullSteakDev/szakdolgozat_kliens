@@ -22,28 +22,27 @@ const ProtectedCustomer = () => {
   }
 
   const protectedCustomer = async (e) => {
-//    try {
+    try {
       const { data } = await fetchProtectedCustomer()
       
       setProtectedCustomer(data.info)
-/* 
+
       setLoading(false)
     } catch (error) {
       console.log(error)
       logout()
-    } */
+    }
   }
 
   useEffect(() => {
     protectedCustomer()
   }, [])
 
-/*   return loading ? (
+  return loading ? (
     <div>
       <h1>Loading...</h1>
     </div>
-  ) : ( */
-  return(
+  ) : (
     <div className="customer-login">
       <div className="customer-links">
         <div className="customer-box">
