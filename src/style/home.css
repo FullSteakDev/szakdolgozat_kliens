@@ -345,26 +345,26 @@ font-size: 20px;
 
 .homegallery .gallery-container {
 overflow-y: auto;
-max-height: calc(100vh - 200px); /* Adjust the max-height as needed */
+max-height: calc(100vh - 200px);
 } 
 
 .homegallery .box-container {
 display: flex;
-flex-wrap: nowrap; /* Prevent wrapping to the next row */
-overflow-x: auto; /* Add horizontal scrolling for small screens */
+flex-wrap: nowrap;
+overflow-x: auto;
 gap: 2rem;
-position: relative; /* Add this to establish a stacking context */
-z-index: 1; /* Ensure the images appear on top of the background */
+position: relative;
+z-index: 1;
 }
 .homegallery .box {
-flex: 0 0 calc(33.33% - 2rem); /* Adjust the width of each image box as needed */
+flex: 0 0 calc(33.33% - 2rem);
 border: var(--border);
 box-shadow: var(--box-shadow);
 background: var(--white);
 }
 
 .homegallery .box .image img {
-max-width: 100%; /* Add this to ensure images fit within the box */
+max-width: 100%;
 height: auto;
 object-fit: cover;
 transition: 0.2s linear;
