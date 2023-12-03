@@ -30,7 +30,7 @@ const ProjectsEmployee = () => {
 
   return loading ? (
     <div>
-      <h1>Loading...</h1>
+      <h1>Projektek betöltése folyamatban</h1>
     </div>
   ) : (
     <div className='employee'>

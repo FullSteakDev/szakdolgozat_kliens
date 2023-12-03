@@ -30,7 +30,7 @@ const GetProducts = () => {
 
   return loading ? (
     <div>
-      <h1>Termékek hamarosan érkeznek</h1>
+      <h1>Termékek betöltése folyamatban</h1>
     </div>
   ) : (
     <div className='customer'>

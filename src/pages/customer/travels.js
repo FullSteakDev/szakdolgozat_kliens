@@ -30,7 +30,7 @@ const GetTravels = () => {
 
   return loading ? (
     <div>
-      <h1>Loading...</h1>
+      <h1>Elérhető tazások betöltése folyamatban</h1>
     </div>
   ) : (
     <div className='customer'>

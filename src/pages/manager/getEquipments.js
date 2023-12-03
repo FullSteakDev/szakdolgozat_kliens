@@ -24,7 +24,7 @@ const GetEquipments = () => {
 
   return loading ? (
     <div>
-      <h1>Loading...</h1>
+      <h1>Felszerelések betöltése</h1>
     </div>
   ) : (
         <div className='manager'>

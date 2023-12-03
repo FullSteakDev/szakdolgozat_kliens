@@ -24,7 +24,7 @@ const GetVehicles = () => {
 
   return loading ? (
     <div>
-      <h1>Loading...</h1>
+      <h1>Járművek betöltése</h1>
     </div>
   ) : (
         <div className='manager'>

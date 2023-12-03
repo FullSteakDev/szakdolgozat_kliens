@@ -34,7 +34,7 @@ const Basket = () => {
 
   return loading ? (
     <div>
-      <h1>Termékek hamarosan érkeznek</h1>
+      <h1>Kosarad betöltése folyamatban</h1>
     </div>
   ) : (
     <div className='customer'>

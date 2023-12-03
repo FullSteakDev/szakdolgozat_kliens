@@ -34,7 +34,7 @@ const BucketList = () => {
 
   return loading ? (
     <div>
-      <h1>Utazások hamarosan érkeznek</h1>
+      <h1>Bakancslistád betöltése folyamatban</h1>
     </div>
   ) : (
     <div className='customer'>
