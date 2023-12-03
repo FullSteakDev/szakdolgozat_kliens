@@ -8,7 +8,7 @@ const GetProducts = () => {
   const [products, setProducts] = useState(null)
 
   const product = async () => {
-//    try {
+    try {
       const { data } = await fetchProducts();
 
       const sortedProducts = data.products.sort((a, b) => {
@@ -18,22 +18,21 @@ const GetProducts = () => {
       });
 
       setProducts(sortedProducts);
-/*       setLoading(false);
+      setLoading(false);
     } catch (error) {
       console.log(error);
-    } */
+    }
   }
 
   useEffect(() => {
     product()
   }, []);
 
-/*   return loading ? (
+  return loading ? (
     <div>
       <h1>Termékek hamarosan érkeznek</h1>
     </div>
-  ) : ( */
-  return (
+  ) : (
     <div className='customer'>
       {products.map((product, index) => (
         <div key={index} className="customer-box">
